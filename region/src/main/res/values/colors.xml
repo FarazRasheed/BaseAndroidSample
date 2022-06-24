@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkSlateBlue">#272262</color>
+    <color name="blueyGrey">#9391b1</color>
+    <color name="blueWithAHintOfPurple">#5E35B1</color>
+    <color name="blueWithAHintOfPurpleFaded">#805E35B1</color>
+    <color name="brightBlue">#007aff</color>
+    <color name="turquoise">#00b9ae</color>
+    <color name="periwinkle">#a682ff</color>
+    <color name="lightBlueGrey">#dae0f0</color>
+    <color name="lightBlueGreyFaded36">#5Cdae0f0</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="textInputBackgroundColor">#E8E9F6</color>
+    <color name="semiBlack">#30000000</color>
+    <color name="camera_overlay_color">#201C26A8</color>
+    <color name="disabled">#9391B1</color>
+    <color name="divider">#33979797</color>
+    <color name="error">#ff3b30</color>
+
+
+
+    <color name="otp_success">#44d389</color>
+
+
+
+
+</resources>

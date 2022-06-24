@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_nav_grapgh"
+    app:startDestination="@id/otpVerificationFragment">
+
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        tools:layout="@layout/fragment_otp_verification"
+        android:name="com.yap.yappk.ui.onboarding.otpverification.OTPVerificationFragment"
+        android:label="OTPVerificationFragment" />
+</navigation>

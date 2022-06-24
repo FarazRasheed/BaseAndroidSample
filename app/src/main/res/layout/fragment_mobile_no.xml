@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.digitify.testyappakistan.onboarding.mobile.MobileNoVM" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_medium_large"
+            android:paddingRight="@dimen/margin_medium_large"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHeadingMobile"
+                style="@style/Yap.App.Widget.TextView.PrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:layout_marginBottom="@dimen/margin_heading_to_field"
+                android:gravity="center"
+                android:text="What’s your mobile number?"
+                android:textSize="@dimen/text_size_h3"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="What’s your mobile number?" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvsubHeading"
+                style="@style/Yap.App.Widget.TextView.Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_heading_to_field"
+                android:gravity="center"
+                android:text="We’ll send an OTP to this number"
+                android:textSize="@dimen/text_size_h6"
+                app:layout_constraintTop_toBottomOf="@id/tvHeadingMobile"
+                tools:text="We’ll send an OTP to this number" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etMobileNumber"
+                style="@style/Yap.App.Widget.TextInputLayout.OutLined"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvsubHeading"
+                android:layout_marginTop="@dimen/margin_xl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:prefixText="@{viewModel.viewState.countryCode}"
+                app:startIconDrawable="@drawable/draw_icon"
+                android:drawablePadding="@dimen/_30sdp">
+
+                <com.yap.uikit.widget.edittexts.PhoneTextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789-"
+                    android:inputType="phone"
+                    android:text="@={viewModel.viewState.mobile}"
+                    app:isoCountryCode="@{viewModel.viewState.countryCode}"
+                    android:onTextChanged="@{viewModel::onPhoneNumberTextChanged}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                android:onClick="@{viewModel::onClick}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:enabled="@{viewModel.viewState.isValid , default = false}"
+                android:text="Next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

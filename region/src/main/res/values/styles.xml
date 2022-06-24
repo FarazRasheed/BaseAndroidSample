@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Yap.App.Widget.AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Yap.App.Widget.ToolBar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:actionBarSize</item>
+        <item name="android:minHeight">?android:actionBarSize</item>
+        <item name="android:background">@color/white</item>
+        <item name="title">@null</item>
+    </style>
+
+    <style name="Yap.App.Widget.TextView.ToolBar" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?android:actionBarSize</item>
+        <item name="android:minWidth">?android:actionBarSize</item>
+        <item name="android:layout_gravity">center|center_vertical|center_horizontal</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/true_black</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="font">@font/roboto_regular</item>
+    </style>
+
+    <style name="Yap.App.Widget.ImageView" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/empty_string</item>
+    </style>
+
+    <style name="Yap.App.Widget.ImageView.Circle.Small" parent="Yap.App.Widget.ImageView">
+        <item name="android:layout_width">@dimen/_26sdp</item>
+        <item name="android:layout_height">@dimen/_26sdp</item>
+        <item name="android:contentDescription">@string/empty_string</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.CircleImageView</item>
+    </style>
+
+    <style name="Yap.App.Switch" parent="TextAppearance.AppCompat.Widget.Switch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/primaryDarkTextColor</item>
+        <item name="android:textSize">@dimen/text_size_h7</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_white_top_rounded_corner</item>
+    </style>
+
+    <style name="Yap.App.Widget.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="elevation">@dimen/_4sdp</item>
+        <item name="itemTextAppearanceInactive">
+            @style/Yap.App.BottomNavigationView.TextAppearance.InActive
+        </item>
+        <item name="itemTextAppearanceActive">
+            @style/Yap.App.BottomNavigationView.TextAppearance.Active
+        </item>
+
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorOnPrimary">@color/design_default_color_error</item>
+    </style>
+
+    <style name="Yap.App.Layout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Yap.App.Layout.LinearLayout" parent="Yap.App.Layout">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Yap.App.Layout.LinearLayout.Horizontal" parent="Yap.App.Layout.LinearLayout">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Yap.App.Layout.LinearLayout.Horizontal.White" parent="Yap.App.Layout.LinearLayout.Horizontal">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Yap.App.Layout.LinearLayout.Horizontal.wrap_content" parent="Yap.App.Layout.LinearLayout.Horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Yap.App.Layout.LinearLayout.Horizontal.match_parent" parent="Yap.App.Layout.LinearLayout.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Yap.App.Layout.LinearLayout.Vertical" parent="Yap.App.Layout.LinearLayout">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Yap.App.Layout.LinearLayout.Vertical.White" parent="Yap.App.Layout.LinearLayout.Vertical">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Yap.App.Widget.Divider.Horizontal" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_1sdp</item>
+        <item name="android:background">@color/blue_fade</item>
+    </style>
+
+
+
+    <string name="empty_string"> </string>
+</resources>

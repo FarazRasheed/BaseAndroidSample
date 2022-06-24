@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Base.Yap" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blueWithAHintOfPurple</item>
+        <item name="colorPrimaryDark">@color/darkSlateBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="M">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="materialButtonStyle">@style/Yap.App.Widget.Button.Filled</item>
+        <item name="colorControlActivated">?attr/colorPrimaryDark</item>
+        <item name="android:layoutDirection">ltr</item>
+
+        <!-- Text Colors -->
+        <item name="prefixTextColor">@color/blueWithAHintOfPurpleFaded</item>
+        <item name="hintTextColor">@color/blueyGrey</item>
+        <item name="primaryTextColor">@color/blueWithAHintOfPurple</item>
+        <item name="primaryDarkTextColor">@color/darkSlateBlue</item>
+        <item name="secondaryTextColor">@color/blueyGrey</item>
+        <item name="tertiaryTextColor">@color/brightBlue</item>
+             <!-- Switch style-->
+
+        <!--    Otp Background colors  -->
+        <item name="otpBackgroundColor">@color/lightBlueGreyFaded36</item>
+        <item name="otpErrorBorderColor">@color/error</item>
+        <item name="otpSuccessBorderColor">@color/otp_success</item>
+        <item name="otpActiveBorderColor">@color/periwinkle</item>
+        <!--    Otp Background colors END  -->
+
+
+        <item name="switchStyle">@style/Yap.App.SwitchComponent</item>
+    </style>
+
+    <style name="Theme.Yap.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Yap.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme" parent="Theme.Base.Yap">
+        <!--        <item name="android:colorBackground">@color/white</item>-->
+        <!--        <item name="android:background">@android:color/white</item>-->
+        <!--        <item name="android:windowDisablePreview">true</item>-->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Base.Yap.Splash" parent="AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+    </style>
+
+    <style name="Theme.Base.Yap.Main" parent="Theme.Base.Yap">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="O_MR1">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- Switch -->
+    <style name="CustomSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+    </style>
+
+    <style name="CustomDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowBackground">@color/semiBlack</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>
