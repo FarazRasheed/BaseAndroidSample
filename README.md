@@ -2,10 +2,10 @@
 This is Sample Project for Base Architecture.
 
 ## Modules:
-app - Main app module or parent module to run the application for next route
-region - Its a multi-region application with code bases.
-core - Base classes
-Networking  - Network related code
+* app - Main app module or parent module to run the application for next route
+* region - Its a multi-region application with code bases.
+* core - Base classes
+* Networking  - Network related code
 
 ## 🏗 Tech Stack
 ### Architecture
